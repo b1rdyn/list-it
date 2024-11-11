@@ -15,7 +15,7 @@
        #sidebar {
          width: 250px;
          background-color: #000000;
-         color: #39FF14;
+         color: #FF0000;
          padding: 15px;
          position: fixed;
          height: 100%;
@@ -25,7 +25,7 @@
    
        #main-content {
          flex-grow: 1;
-         background-color: #90EE90;
+         background-color: #ffffff;
          color: #000000;
          padding: 15px;
          display: flex;
@@ -63,28 +63,25 @@
 </head>
 <body>
     <div id="sidebar">
-        <h1>Pelivalikko</h1>
+        <h1>Menu</h1>
         <nav>
             <ul>
-                <li><a href="/">Koti</a></li>
+                <li><a href="/">Home</a></li>
             </ul>
         </nav>
     </div>
     </div>
     <div id="main-content">
       <div id="banner"></div>
-      <h2 id="otsikko">ETUSIVU</h2>
-        <p>
-        Kirjaudu sisään tai rekisteröidy:
-        </p>
-      <h2>Kirjaudu sisään</h2>
+      <h2 id="otsikko">Login or register</h2>
+      <h2>Log in</h2>
         <form action="/" method="post">
             <div class="msg">{{ msg }}</div>
-            <input id="username" name="username" type="text" placeholder="Käyttäjänimi" class="textbox"/><br/><br/>
-            <input id="password" name="password" type="password" placeholder="Salasana" class="textbox"/><br/><br/><br/>
+            <input id="username" name="username" type="text" placeholder="Username" class="textbox"/><br/><br/>
+            <input id="password" name="password" type="password" placeholder="Password" class="textbox"/><br/><br/><br/>
             <input type="submit" class="btn" value="Sign In"/><br/><br/>
         </form>
-        <p class="bottom">Ei käyttäjää?  <a class="bottom" href="/register"> Rekisteröidy</a></p>
+        <p class="bottom">No user?  <a class="bottom" href="/register"> Register</a></p>
     </div>
 </body>
 </html>
